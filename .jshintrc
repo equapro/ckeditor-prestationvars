@@ -1,0 +1,8 @@
+{
+    "node": true,
+    "browser" : true,
+    "globals": {
+        "CKEDITOR": true
+    },
+    "esversion": 6
+}

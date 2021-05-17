@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--
+Copyright (c) 2003-2021, CKSource - Frederico Knabben. All rights reserved.
+For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
+-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Prestationvars Plugin &mdash; CKEditor Sample</title>
+	<script src="../../../ckeditor.js"></script>
+<!--	<script src="../../../dev/console/console.js"></script>-->
+<!--	<script src="../../../dev/console/focusconsole.js"></script>-->
+<!--	<script src="../../widget/dev/console.js"></script>-->
+	<link rel="stylesheet" href="../../../samples/old/sample.css">
+</head>
+<body>
+	<h1 class="samples">Prestationvars Plugin</h1>
+
+	<h2>Classic Sample</h2>
+	<label for="editor1" style="display: none">editor1</label>
+	<textarea cols="80" id="editor1" name="editor1" rows="10">
+		&lt;p&gt;This is a {{sample prestationvars}}. You are using &lt;a href="https://ckeditor.com/"&gt;CKEditor&lt;/a&gt;. &lt;/p&gt;
+	</textarea>
+
+	<hr>
+
+	<h2>Inline Sample</h2>
+	<div id="editor2" contenteditable="true">
+		<p>This is a {{sample prestationvars}}. You are using <a href="https://ckeditor.com/">CKEditor</a>. </p>
+	</div>
+
+	<script>
+		CKEDITOR.replace( 'editor1', {
+			extraPlugins: 'prestationvars',
+			height: 100
+		} );
+
+		CKEDITOR.inline( 'editor2', {
+			extraPlugins: 'prestationvars',
+			height: 100
+		} );
+	</script>
+</body>
+</html>
