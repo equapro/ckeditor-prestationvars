@@ -14,42 +14,31 @@
 
 const vars = [
     {
+        group: 'Général',
+        options: [
+            {name: 'email_info_prestation(prestation)', text: 'Infos prestation'},
+            {name: 'email_signature()', text: 'Signature'}
+        ]
+    },
+    {
         group: 'Prestation',
         options: [
-            { name: 'prestation.code', text: 'Code' },
-            { name: 'prestation.dateCreation', text: 'Date' },
-            { name: 'prestation.observation', text: 'Observation' },
-            { name: 'prestation.refsie', text: 'Réf. SIE' }
-        ]
-    },
-    {
-        group: 'Client',
-        options: [
-            { name: 'prestation.client.nom', text: 'Nom' },
-            { name: 'prestation.client.adresse.adresse1', text: 'Adresse 1' },
-            { name: 'prestation.client.adresse.adresse2', text: 'Adresse 2' },
-            { name: 'prestation.client.adresse.adresse3', text: 'Adresse 3' },
-            { name: 'prestation.client.adresse.cp', text: 'Code Postal' },
-            { name: 'prestation.client.adresse.ville', text: 'Ville' }
-        ]
-    },
-    {
-        group: 'Site',
-        options: [
-            { name: 'prestation.site.nom', text: 'Nom' },
-            { name: 'prestation.site.adresse.adresse1', text: 'Adresse 1' },
-            { name: 'prestation.site.adresse.adresse2', text: 'Adresse 2' },
-            { name: 'prestation.site.adresse.adresse3', text: 'Adresse 3' },
-            { name: 'prestation.site.adresse.cp', text: 'Code Postal' },
-            { name: 'prestation.site.adresse.ville', text: 'Ville' }
+            { name: 'email_prestation_code(prestation)', text: 'Code' },
+            { name: 'email_prestation_dateCreation(prestation)', text: 'Date' },
+            { name: 'email_prestation_observation(prestation)', text: 'Observation' },
+            { name: 'email_prestation_refsie(prestation)', text: 'Réf. SIE' },
+            { name: 'email_prestation_client_nom(prestation)', text: 'Nom client' },
+            { name: 'email_prestation_site_nom(prestation)', text: 'Nom site' },
+            { name: 'email_prestation_site_adresse(prestation)', text: 'Adresse site' },
+            { name: 'email_prestation_equipements(prestation)', text: 'Liste des équipements' }
         ]
     },
     {
         group: 'Produit',
         options: [
-            { name: 'prestation.produit.designation', text: 'Désignation' },
-            { name: 'prestation.produit.famille.designation', text: 'Famille' },
-            { name: 'prestation.produit.sousFamille.designation', text: 'Sous-Famille' }
+            { name: 'email_prestation_produit_designation(prestation)', text: 'Désignation' },
+            { name: 'email_prestation_produit_famille_designation(prestation)', text: 'Famille' },
+            { name: 'email_prestation_produit_sousfamille_designation(prestation)', text: 'Sous-Famille' }
         ]
     }
 ];
